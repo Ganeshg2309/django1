@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Factorial of numbers of 10 numbers</p>
+<form method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type ="submit"> find factorial</button>
+</form>
+    {%for p,q in param1 %}
+    <p>factorial of {{p}} - {{q}}</p>
+    {%endfor%}
+</body>
+</html>

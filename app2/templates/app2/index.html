@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>hello django</p>
+    <h1> Factorial program</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">find factorial</button>
+
+    </form>
+    <p>The factorial of {{param2}} is {{param1}} </p>
+
+</body>
+</html>
